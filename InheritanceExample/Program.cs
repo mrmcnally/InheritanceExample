@@ -16,10 +16,10 @@ namespace InheritanceExample
             Animal a3 = new Cat("Cat", "Balinese");
 
             //making sounds
-            //d1.makeSound();
-            //a1.makeSound();
-            //a2.makeSound();
-            //a3.makeSound();
+            d1.makeSound();
+            a1.makeSound();
+            a2.makeSound();
+            a3.makeSound();
 
             Console.WriteLine("Iterating through Animal Array");
             Animal[] AnimalArray = new Animal[3];
