@@ -8,12 +8,12 @@ namespace InheritanceExample
 {
     class Dog : Animal
     {
-
         private string breed;
 
+        //Constructor passes name to base and sets breed field
         public Dog(string name, string breed) : base(name)
         {
-
+            Breed = breed;
         }
 
         public string Breed
@@ -22,6 +22,7 @@ namespace InheritanceExample
             set { breed = value; }
         }
 
+        //Overriding base method
         public override void makeSound()
         {
             Console.WriteLine("Woof");

@@ -10,9 +10,10 @@ namespace InheritanceExample
     {
         private string breed;
 
+        //Cat constructor takes name and breed as arguments and passes name to base class
         public Cat(string name, string breed) : base(name)
         {
-
+            Breed = breed;
         }
 
         public string Breed
@@ -21,11 +22,10 @@ namespace InheritanceExample
             set { breed = value; }
         }
 
+        //Make sound method overrides base class method using override keyword
         public override void makeSound()
         {
             Console.WriteLine("Meow");
         }
-
-
     }
 }
